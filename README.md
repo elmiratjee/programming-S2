@@ -1,6 +1,7 @@
 # Programming Semester 2
 
-## Password.py
+## [Password.py](https://github.com/elmiratjee/programming-S2/blob/master/Password.py)
+ 
 In dit programma kunt u een wachtwoord invoeren. Nadat uw wachtwoord is ingevoerd wordt hij gecontroleerd of hij aan de volgende eisen voldoet: 
 * Minimale lengte
 * Minimaal 1 hoofdletter
@@ -9,7 +10,7 @@ In dit programma kunt u een wachtwoord invoeren. Nadat uw wachtwoord is ingevoer
 
 Daarna geeft hij een score aan hoe sterk het wachtwoord is.
 
-## passwordGenerator.py
+## [passwordGenerator.py](https://github.com/elmiratjee/programming-S2/blob/master/passwordGenerator.py)
 Met dit programma kan je zelf een wachtwoord generen. Als eerst wordt er gevraagd of je zelf de extra instellingen wil kunnen bewerken, stel als dit wel het geval is gebeurt er het volgende:
 1. Wilt u nummers in het wachtwoord? Zo ja, hoeveel?
 2. Wilt u hoofdletters in het wachtwoord? Zo ja, hoeveel?
