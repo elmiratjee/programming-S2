@@ -4,40 +4,68 @@ specialCharacters = '[@_!#$%^&*()<>?/\|}{~:]'
 numbers = '0123456789'
 uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 lowercase = 'abcdefghijklmnopqrstuvwxyz'
+count = 0
+password = []
 
-print ("Do you want to create a password?")
-length = input ("Password length? \n")
-length = int (length)
+print("Do you want to create a password?")
 
 answerSettings = input("Do you want to add extra settings?\n")
 if answerSettings == "yes":
     answerNumbers = input("Do you want numbers? \n")
     if answerNumbers == "yes":
-        answersNumbersYes = answerNumbers
+        countNumbers = input("How many numbers do you want? \n")
+        countNumbers = int(countNumbers)
+        while count < countNumbers:
+            passwordNumbers = random.choice(numbers)
+            password += (passwordNumbers)
+            print(passwordNumbers, sep=' ', end='', flush=True)
+            count += 1
+    print("\n")
+    count = 0
 
     answerUppercase = input("Do you want uppercases? \n")
     if answerUppercase == "yes":
-        answersUppercaseYes = answerUppercase
+        countUppercase = input("How many uppercases do you want? \n")
+        countUppercase = int(countUppercase)
+        while count < countUppercase:
+            passwordUppercase = random.choice(uppercase)
+            password += (passwordUppercase)
+            print(passwordUppercase, sep=' ', end='', flush=True)
+            count += 1
+    print("\n")
+    count = 0
 
     answerLowercase = input("Do you want lowercases? \n")
     if answerLowercase == "yes":
-        answerLowercaseYes = answerLowercase
+        countLowercase = input("How many lowercases do you want? \n")
+        countLowercase = int(countLowercase)
+        while count < countLowercase:
+            passwordLowercase = random.choice(lowercase)
+            password += (passwordLowercase)
+            print(passwordLowercase, sep=' ', end='', flush=True)
+            count += 1
+    print("\n")
+    count = 0
 
     answerSpecialchar = input("Do you want special characters? \n")
     if answerSpecialchar == "yes":
-        answerSpecialcharYes = answerSpecialchar
+        countSpecialchar = input("How many special characters do you want? \n")
+        countSpecialchar = int(countSpecialchar)
+        while count < countSpecialchar:
+            passwordSpecialchar = random.choice(specialCharacters)
+            password += (passwordSpecialchar)
+            print(passwordSpecialchar, sep=' ', end='', flush=True)
+            count += 1
+    print("\n")
+    count = 0
 
-    for l in range (length):
-        answersNumbersYes = random.choice(numbers)
-        answersUppercaseYes = random.choice(uppercase)
-        answerLowercaseYes = random.choice(lowercase)
-        answerSpecialcharYes = random.choice(specialCharacters)
-        print(answersNumbersYes, sep=' ', end='', flush=True)
-        print(answersUppercaseYes, sep=' ', end='', flush=True)
-        print(answerLowercaseYes, sep=' ', end='', flush=True)
-        print(answerSpecialcharYes, sep=' ', end='', flush=True)
+    random.shuffle(password)
+    listToStr = ''.join([str(elem) for elem in password])
+    print(listToStr)
 
 else:
+    length = input ("Password length? \n")
+    length = int (length)
     print ('Here is your password: ')
     for r in range(length):
         passwordNoSettings = random.choice(characters)
