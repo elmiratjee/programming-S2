@@ -53,7 +53,7 @@ if answerSettings == "yes":
 
     random.shuffle(password)
     listToStr = ''.join([str(elem) for elem in password])
-    print(listToStr)
+    print( "Here is your password: " + listToStr)
 
 else:
     length = input ("Password length? \n")
