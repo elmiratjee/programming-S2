@@ -1,5 +1,8 @@
-# ProgrammingS2
+# Programming Semester 2
 
-# This is an <h1> tag
-  
-## This is an <h2> tag
+## Password.py
+In dit programma kunt u een wachtwoord invoeren. Nadat uw wachtwoord is ingevoerd wordt hij gecontroleerd of hij aan de volgende eisen voldoet: 
+* Minimale lengte
+* Minimaal 1 hoofdletter
+* Minimaal 1 cijfer
+* Minimaal 1 speciaal teken
