@@ -18,9 +18,7 @@ if answerSettings == "yes":
         while count < countNumbers:
             passwordNumbers = random.choice(numbers)
             password += (passwordNumbers)
-            print(passwordNumbers, sep=' ', end='', flush=True)
             count += 1
-    print("\n")
     count = 0
 
     answerUppercase = input("Do you want uppercases? \n")
@@ -30,9 +28,7 @@ if answerSettings == "yes":
         while count < countUppercase:
             passwordUppercase = random.choice(uppercase)
             password += (passwordUppercase)
-            print(passwordUppercase, sep=' ', end='', flush=True)
             count += 1
-    print("\n")
     count = 0
 
     answerLowercase = input("Do you want lowercases? \n")
@@ -42,9 +38,7 @@ if answerSettings == "yes":
         while count < countLowercase:
             passwordLowercase = random.choice(lowercase)
             password += (passwordLowercase)
-            print(passwordLowercase, sep=' ', end='', flush=True)
             count += 1
-    print("\n")
     count = 0
 
     answerSpecialchar = input("Do you want special characters? \n")
@@ -54,9 +48,7 @@ if answerSettings == "yes":
         while count < countSpecialchar:
             passwordSpecialchar = random.choice(specialCharacters)
             password += (passwordSpecialchar)
-            print(passwordSpecialchar, sep=' ', end='', flush=True)
             count += 1
-    print("\n")
     count = 0
 
     random.shuffle(password)
