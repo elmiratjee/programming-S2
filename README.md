@@ -17,6 +17,6 @@ Met dit programma kan je zelf een wachtwoord generen. Als eerst wordt er gevraag
 3. Wilt u kleine letters in het wachtwoord? Zo ja, hoeveel?
 4. Wilt u speciale tekens in het wachtwoord? Zo ja, hoeveel?
 
-Na deze vragen wordt er een wachtwoord gegenereert op basis van de eisen.
+Na deze vragen wordt er een wachtwoord gegenereerd op basis van de eisen.
 
-Als u niet zelf de eisen wilt instellen krijgt u de vraag hoeveel tekens het wachtwoord nodig heeft. Als u daarop antwoord heeft gegeven wordt er automatisch een wachtwoord gegenereert.
+Als u niet zelf de eisen wilt instellen krijgt u de vraag hoeveel tekens het wachtwoord nodig heeft. Als u daarop antwoord heeft gegeven wordt er automatisch een wachtwoord gegenereerd.
